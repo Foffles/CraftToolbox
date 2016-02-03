@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Craft Toolbox.">
+    <base href="/">
+    <link href="css/lib/tether/tether.css" rel="stylesheet" />
+    <link href="css/lib/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+    <title>Craft Toolbox</title>
+</head>
+<body>
+    <app>Loading...</app>
+
+    <script src="js/lib/angular2/angular2-polyfills.js"></script>
+    <script src="js/lib/system/system.js"></script>
+    <script src="js/lib/rxjs/Rx.js"></script>
+    <script src="js/lib/angular2/angular2.dev.js"></script>
+    <script>
+        System.config({
+            packages: { 'js': { defaultExtension: 'js' } }
+        });
+        System.import('./js/startup');
+    </script>
+</body>
+</html>
